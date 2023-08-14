@@ -26,7 +26,7 @@
                 </th:block>
                 <span><i class="text-md icon-sm iconfont icon-dakaiyanjing"></i>
                                     <span class="font-number">[[${post.stats.visit}]]</span></span>
-                <span class="ms-3 ms-md-4 ms-xl-5"><i class="text-md icon-sm iconfont icon-yijian"></i>
+                <span class="ms-3 ms-md-4 ms-xl-5"><i class="text-md icon-sm iconfont icon-pinglun1"></i>
                                     <span class="font-number">[[${post.stats.comment}]]</span></span>
                 <a href="javascript:;" @click="like" :class="{ active: liked }" class="post-like ms-3 ms-md-4 ms-xl-5"><i class="text-md icon-sm iconfont icon-zan"></i>
                   <span class="font-number" x-text="likesCount"></span>
@@ -118,7 +118,7 @@
                         <div class="flex-shrink-0" x-data="postMetaData">
                                                     <span class="d-none d-md-inline-block"><i class="text-md icon-sm iconfont icon-dakaiyanjing"></i>
                                                         <span class="font-number" th:text="${recommendPost.stats.visit}"></span></span>
-                          <span class="d-none d-md-inline-block ms-md-4 ms-xl-5"><i class="text-md icon-sm iconfont icon-yijian"></i>
+                          <span class="d-none d-md-inline-block ms-md-4 ms-xl-5"><i class="text-md icon-sm iconfont icon-pinglun1"></i>
                                                         <span class="font-number" th:text="${recommendPost.stats.comment}"></span></span>
                           <a href="javascript:;" @click="like" :class="{ active: liked }" class="ms-md-4 ms-xl-5"><i class="text-md icon-sm iconfont icon-zan"></i>
                             <span class="font-number" x-text="likesCount"></span>

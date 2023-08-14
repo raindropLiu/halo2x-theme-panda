@@ -4,7 +4,8 @@
 
   <header class="site-navbar navbar navbar-expand-xl">
     <div class="container">
-      <a th:href="${site.url}" class="navbar-brand">
+			<!-- th:href="${site.url}" -->
+      <a href="/" class="navbar-brand">
         <img th:src="${theme.config.basic.logo}" alt="Logo" class="logo light-logo">
         <img th:src="${theme.config.basic.logo_dark}" alt="Logo" class="logo dark-logo">
       </a>
@@ -53,8 +54,8 @@
         <a href="javascript:" class="aside-toggle d-xl-none btn btn-link btn-rounded btn-sm btn-icon ms-2 ms-md-3">
           <span><i class="iconfont icon-caidanzhongxin"></i></span></a>
 
-        <a href="/console" class="d-none d-xl-block btn btn-primary btn-rounded btn-sm btn-icon ms-2 ms-md-3">
-          <span><i class="iconfont icon-wode1"></i></span></a>
+        <!-- <a href="/console" class="d-none d-xl-block btn btn-primary btn-rounded btn-sm btn-icon ms-2 ms-md-3">
+          <span><i class="iconfont icon-wode1"></i></span></a> -->
 
       </div>
     </div>
