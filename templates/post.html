@@ -18,7 +18,7 @@
 										<!-- todo  -->
                     <img th:src="${theme.config.personal.profileAvatar ?: #theme.assets('/images/jiewen_icon.png')}" th:alt="${contributor.displayName}">
                   </div>
-                  <div class="lh-1">aad
+                  <div class="lh-1">
                     <div class="h-1x">[[${contributor.displayName}]]</div>
                     <div class="font-number text-muted text-xs mt-1">[[${#dates.format(post.spec.publishTime,'yyyy-MM-dd')}]]</div>
                   </div>

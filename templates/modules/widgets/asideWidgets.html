@@ -22,8 +22,10 @@
               <a th:href="@{${post.status.permalink}}" target="_blank" class="random-post-action btn btn-link btn-icon"><span><i class="iconfont icon-launch2"></i></span></a>
             </div>
           </div>
-          <h3 class="random-post-title h-2x">
-            <a th:href="@{${post.status.permalink}}" target="_blank" title="第四范式冲刺IPO，难逃AI玩家通病？">第四范式冲刺IPO，难逃AI玩家通病？</a>
+          <h3 class="random-post-title h-2x"> 
+            <a th:href="@{${post.status.permalink}}" target="_blank" th:title="${post.spec.title}" >
+							[[${post.spec.title}]]
+							</a>
           </h3>
         </div>
       </div>
