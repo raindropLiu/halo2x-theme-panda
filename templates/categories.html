@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{modules/layout :: html(title = '分类 - ' + ${site.title},htmlType = index,header = null,leftSidebar = true,content = ~{::content}, head = null, footer = null)}"
+>
+<th:block th:fragment="content">
+  <div class="site-main h-v-75">
+    <div class="container">
+      <div class="cats-list row g-3 g-md-4">
+        <th:block th:with="categories = ${categoryFinder.listAll()}">
+        <div class="col-12 col-md-6"
+             th:each="category : ${categories}">
+          <div class="item rounded-2">
+            <div class="media media-2x1">
+              <a th:href="@{${category.status.permalink}}" class="media-content" th:style="'background-image: url('+${category.spec.cover ?: #theme.assets('/images/img00038.jpg')}+')'"></a>
+            </div>
+            <div class="item-content">
+              <h2 class="text-xxl">
+                <a th:href="@{${category.status.permalink}}">
+                  <span th:text="${category.spec.displayName}"></span>
+                  <sup class="font-number fw-normal" th:text="'['+${category.status.postCount} +']'"></sup>
+                </a>
+              </h2>
+            </div>
+          </div>
+        </div>
+        </th:block>
+      </div>
+    </div>
+  </div>
+</th:block>
+</html>
