@@ -114,7 +114,7 @@
 
                     <a href="#" th:title="${contributor.displayName}" class="d-flex align-items-center">
                       <div class="flex-avatar w-24 me-1">
-												<img th:src="${theme.config.personal.profileAvatar ?: #theme.assets('/images/jiewen_icon.png')}" th:alt="${contributor.displayName}">
+												<img data-name th:src="${theme.config.personal.profileAvatar ?: #theme.assets('/images/jiewen_icon.png')}" th:alt="${contributor.displayName}">
 													<!-- todo -->
                         <!-- <img th:src="${contributor.avatar}" th:title="${contributor.displayName}" th:alt="${contributor.displayName}"> -->
                       </div>
