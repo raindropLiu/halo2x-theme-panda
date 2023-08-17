@@ -40,7 +40,7 @@
 
                     <a href="#" th:title="${contributor.displayName}" class="d-flex align-items-center">
                       <div class="flex-avatar w-24 me-1">
-                        <img th:src="${contributor.avatar}" th:title="${contributor.displayName}" th:alt="${contributor.displayName}">
+                        <img data-name th:src="${contributor.avatar}" th:title="${contributor.displayName}" th:alt="${contributor.displayName}">
                       </div>
                       <div class="h-1x">[[${contributor.displayName}]]</div>
                     </a>
