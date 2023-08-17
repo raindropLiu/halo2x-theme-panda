@@ -65,7 +65,7 @@
 <script th:src="@{/assets/plugins/swiper/swiper-bundle.min%EF%B9%96v=1.0.3.js}"></script>
 <script th:src="@{/assets/plugins/clipboard/clipboard.min%EF%B9%96v=1.0.3.js}"></script>
 <script th:src="@{/assets/plugins/tocbot/tocbot.min%EF%B9%96v=1.0.3.js}"></script>
-<!-- <script th:src="@{/assets/plugins/namespace/index.js}"></script> -->
+<script th:src="@{/assets/plugins/namespace/index.js}"></script>
 <script th:src="@{/assets/js/nicetheme%EF%B9%96v=1.0.3.js}"></script>
 <th:block th:if="${htmlType == 'moments'}">
   <script th:src="@{/assets/plugins/glightbox/glightbox.min.js}"></script>
@@ -86,13 +86,13 @@
 <div></div>
 <script>
 	 $(document).ready(function () {
-		// namedavatar.config({
-		// 	nameType: 'initials',
-		// 	backgroundColors:[ 'rgb(243 244 246 / 1'],
-		// 	textColor:'rgb(31 41 55)'
-		// });
-		// var imgs = document.querySelectorAll('img[data-name]');
-		// namedavatar.setImgs(imgs, 'alt');
+		namedavatar.config({
+			nameType: 'initials',
+			backgroundColors:[ 'rgb(243 244 246 / 1'],
+			textColor:'rgb(31 41 55)'
+		});
+		var imgs = document.querySelectorAll('img[data-name]');
+		namedavatar.setImgs(imgs, 'alt');
     });
 
 </script>
