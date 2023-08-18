@@ -36,7 +36,8 @@
                                 <a href="javascript:;" @click="like('moment')" :class="{ active: liked }" class="moment-like-taggle font-number mx-2">
 																	<i class="text-xl iconfont icon-dianzan-xiankuang me-1"></i>
 																	<!-- <span x-text="likesCount">2</span> -->
-																	[[${moment.stats.upvote}]]
+																	[[${moment}]]
+																	[[${moment.stats}]]
 																	<span x-text="likesCount">[[${moment.stats.upvote}]]</span>
 																</a>
                             </div>
