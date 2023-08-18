@@ -52,9 +52,18 @@
 
                             </div>
                         </div>
+												<!-- todo -->
+												<div class="mt-2" x-show="showComment">
+													<halo:comment
+														group="moment.halo.run"
+														kind="Moment"
+														th:attr="name=${moment.metadata.name}"
+														colorScheme="'light'"
+													/> 
+												</div>
                         </th:block>
                         <th:block th:replace="~{modules/widgets/pagination :: pagination}" />
-
+												
                     </div>
                 </div>
                 <th:block th:replace="~{modules/right-widget :: right-widget}" />
