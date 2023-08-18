@@ -35,7 +35,9 @@
       <div class="widget card mb-3">
         <div class="widget widget-author card">
           <div class="widget-author-cover media media-2x1">
-            <div class="media-content" th:style="'background-image: url('+ ${theme.config.personal.profileImg ?: #theme.assets('/images/img00051.jpg')}+')'">
+						<!-- + ';background-position: 50% 0%;' -->
+            <div class="media-content" 
+						th:style="'background-image: url('+ ${theme.config.personal.profileImg ?: #theme.assets('/images/img00051.jpg')}+');'+'background-position: 50% 0%;'">
             </div>
           </div>
           <div class="widget-author-meta text-center">
