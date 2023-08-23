@@ -34,7 +34,7 @@ spec:
         - $formkit: repeater
           name: banner
           label: 幻灯片
-          value: [ ]
+          value: []
           children:
             - $formkit: attachment
               name: imgUrl
@@ -47,7 +47,7 @@ spec:
         - $formkit: repeater
           name: card
           label: 小卡片设置
-          value: [ ]
+          value: []
           children:
             - $formkit: attachment
               name: imgUrl
@@ -135,26 +135,26 @@ spec:
           id: socials
           key: socials
           label: 社交信息
-          value: [ ]
+          value: []
           children:
-              - $formkit: select
-                name: socials_select
-                label: 平台
-                options:
-                  - label: 微博
-                    value: <i class="iconfont icon-weibo"></i>
-                  - label: Email
-                    value: <i class="iconfont icon-xinxi"></i>
-                  - label: Github
-                    value: <i class="iconfont icon-github"></i>
-                  - label: Bilibili
-                    value: <i class="iconfont icon-bilibili"></i>
-                  - label: Youtube
-                    value: <i class="iconfont icon-youtube"></i>
-                  - label: Twitter
-                    value: <i class="iconfont icon-twitter"></i>
-              - $formkit: text
-                name: socialUrl
-                label: 链接
-
-
+            - $formkit: select
+              name: socials_select
+              label: 平台
+              options:
+                - label: 掘金
+                  value: <i class="iconfont icon-juejin"></i>
+                - label: 微博
+                  value: <i class="iconfont icon-weibo"></i>
+                - label: Email
+                  value: <i class="iconfont icon-xinxi"></i>
+                - label: Github
+                  value: <i class="iconfont icon-github"></i>
+                - label: Bilibili
+                  value: <i class="iconfont icon-bilibili"></i>
+                - label: Youtube
+                  value: <i class="iconfont icon-youtube"></i>
+                - label: Twitter
+                  value: <i class="iconfont icon-twitter"></i>
+            - $formkit: text
+              name: socialUrl
+              label: 链接
