@@ -1,8 +1,7 @@
 var currentColorScheme = "system";
 
 function initColorScheme(defaultColorScheme, enableChangeColorScheme) {
-  // let colorScheme = defaultColorScheme;
-  let colorScheme = "dark";
+  let colorScheme = defaultColorScheme;
 
   if (enableChangeColorScheme) {
     colorScheme = localStorage.getItem("color-scheme") || colorScheme;
