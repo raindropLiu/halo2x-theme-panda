@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html
   xmlns:th="https://www.thymeleaf.org"
-  th:replace="~{layout :: html(head = null,content = ~{::content})}"
+  th:replace="~{layout :: html(head, content = ~{::content})}"
 >
+  <th:block th:if="${head != null}">
+    <th:block th:replace="${head}" />
+  </th:block>
   <th:block th:fragment="content">
-    <!-- <html
-  lang="en"
-  xmlns:th="http://www.thymeleaf.org"
-  th:replace="~{modules/layout :: html(title = ${site.title},htmlType = index,header = null,content = ~{::content}),leftSidebar = true,content = ~{::content}, head = null, footer = null)}"
-> -->
+    <!-- th:replace="~{layout :: html(head = null,content = ~{::content})}" -->
+
     zczczxc
     <h1 th:text="${singlePage.spec.title}"></h1>
     sfdhgsyf
