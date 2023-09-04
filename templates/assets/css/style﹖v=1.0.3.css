@@ -862,7 +862,6 @@ a.media-overlay:visited {
   text-align: center;
   left: 50%;
   top: 50%;
-  font-size: 38px;
   transform: translate(-50%, -50%);
 }
 .media-21x9:after {
