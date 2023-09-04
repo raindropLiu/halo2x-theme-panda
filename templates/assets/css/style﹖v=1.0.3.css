@@ -857,10 +857,12 @@ a.media-overlay:visited {
   display: inline-block;
   color: #fff;
   width: 60%;
+  line-height: normal;
   text-align: center;
   left: 50%;
-  bottom: 50px;
-  transform: translateX(-50%);
+  top: 50%;
+  font-size: 38px;
+  transform: translate(-50%, -50%);
 }
 .media-21x9:after {
   padding-top: 42.857143%;
