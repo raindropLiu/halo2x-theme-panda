@@ -857,6 +857,7 @@ a.media-overlay:visited {
   display: inline-block;
   color: #fff;
   width: 60%;
+  font-weight: 500;
   line-height: normal;
   text-align: center;
   left: 50%;
