@@ -44,9 +44,13 @@ spec:
               name: goUrl
               label: 跳转链接
               value: ""
+            - $formkit: text
+              name: text
+              label: 居中文字
+              value: ""
         - $formkit: repeater
           name: card
-          label: 小卡片设置
+          label: 下方小卡片设置
           value: []
           children:
             - $formkit: attachment
