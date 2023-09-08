@@ -2,7 +2,7 @@ var currentColorScheme = "system";
 
 function initColorScheme(defaultColorScheme, enableChangeColorScheme) {
   let colorScheme = defaultColorScheme;
-
+  console.log("color", colorScheme);
   if (enableChangeColorScheme) {
     colorScheme = localStorage.getItem("color-scheme") || colorScheme;
   }
